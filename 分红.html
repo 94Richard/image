@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>分红</title>
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="css/personal.css" />
+		<script type="text/javascript" src="js/jquery-1.12.2.min.js" ></script>
+	</head>
+<script type="text/javascript">
+$(document).ready(function() {
+	jQuery.jqtab = function(tabtit,tab_conbox,shijian) {
+		$(tab_conbox).find("li").hide();
+		$(tabtit).find("li:first").addClass("thistab").show(); 
+		$(tab_conbox).find("li:first").show();
+	
+		$(tabtit).find("li").bind(shijian,function(){
+		  $(this).addClass("thistab").siblings("li").removeClass("thistab"); 
+			var activeindex = $(tabtit).find("li").index(this);
+			$(tab_conbox).children().eq(activeindex).show().siblings().hide();
+			return false;
+		});
+	
+	};
+
+	$.jqtab("#tabs","#tab_conbox","click");
+	
+	$.jqtab("#tabs2","#tab_conbox2","mouseenter");
+	
+});
+</script>
+	<body>
+		<div class="personal-head">
+			<div class="personal-head-center">
+				<div class="personal-head-logo"><img src="images/logo.png" /></div>
+				<div class="personal-head-nav">
+					<ul>
+						<li>
+							<a href="个人中心.html">首页</a>
+						</li>
+						<li>
+							<a href="">账户设置<i class="fa fa-angle-down"></i></a>
+							<div class="xnav">
+								<dl>
+									<dt>安全设置</dt>
+									<dd>
+										<a href="">修改登录密码</a>
+									</dd>
+									<dd>
+										<a href="">手机绑定</a>
+									</dd>
+									<dd>
+										<a href="">邮箱绑定</a>
+									</dd>
+									<dd>
+										<a href="">支付密码</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>个人资料</dt>
+									<dd>
+										<a href="">收货地址</a>
+									</dd>
+									<dd>
+										<a href="">修改头像/昵称</a>
+									</dd>
+									<dd>
+										<a href="">实名信息</a>
+									</dd>
+									<dd>
+										<a href="">消息提醒设置</a>
+									</dd>
+								</dl>
+
+								<dl>
+									<dt>账号绑定</dt>
+									<dd>
+										<a href="">支付宝绑定</a>
+									</dd>
+									<dd>
+										<a href="">微博绑定</a>
+									</dd>
+									<dd>
+										<a href="">分享绑定</a>
+									</dd>
+
+								</dl>
+							</div>
+						</li>
+
+						<li>
+							<a href="">分享阵地<i class="fa fa-angle-down"></i></a>
+							<div class="xnav">
+								<dl>
+									<dt>安全设置</dt>
+									<dd>
+										<a href="">修改登录密码</a>
+									</dd>
+									<dd>
+										<a href="">手机绑定</a>
+									</dd>
+									<dd>
+										<a href="">邮箱绑定</a>
+									</dd>
+									<dd>
+										<a href="">支付密码</a>
+									</dd>
+								</dl>
+								<dl>
+									<dt>个人资料</dt>
+									<dd>
+										<a href="">收货地址</a>
+									</dd>
+									<dd>
+										<a href="">修改头像/昵称</a>
+									</dd>
+									<dd>
+										<a href="">实名信息</a>
+									</dd>
+									<dd>
+										<a href="">消息提醒设置</a>
+									</dd>
+								</dl>
+
+								<dl>
+									<dt>账号绑定</dt>
+									<dd>
+										<a href="">支付宝绑定</a>
+									</dd>
+									<dd>
+										<a href="">微博绑定</a>
+									</dd>
+									<dd>
+										<a href="">分享绑定</a>
+									</dd>
+
+								</dl>
+							</div>
+						</li>
+
+						<li>
+							<a href="个人中心.html">消息</a>
+						</li>
+					</ul>
+				</div>
+				<div class="personal-head-search">
+					<input type="search" name="" placeholder="请输入搜索内容">
+					<button type="button">搜索</button>
+				</div>
+			</div>
+		</div>
+		<div class="personal-main">
+			<div class="personal-left">
+				<h3>个人中心</h3>
+				<dl>
+					<dt>资产管理中心<i class="fa fa-caret-down"></i></dt>
+					<dd>
+						<a href="">我的资产</a>
+					</dd>
+					<dd>
+						<a href="">我的分红</a>
+					</dd>
+					<dd>
+						<a href="">我的 HI 值</a>
+					</dd>
+					<dd>
+						<a href="">我的积分</a>
+					</dd>
+					<dd>
+						<a href="">我的贡献值</a>
+					</dd>
+					<dd>
+						<a href="">我的分享阵地</a>
+					</dd>
+					<dd>
+						<a href="">申请微商城</a>
+					</dd>
+					<dd>
+						<a href="">我的微商城</a>
+					</dd>
+					<dd>
+						<a href="">我的消费资本</a>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt>会员管理中心<i class="fa fa-caret-down"></i></dt>
+					<dd>
+						<a href="">会员权益说明</a>
+					</dd>
+					<dd>
+						<a href="">会员级别</a>
+					</dd>
+					<dd>
+						<a href="">资金制度介绍</a>
+					</dd>
+					<dd>
+						<a href="">职级晋升</a>
+					</dd>
+					<dd>
+						<a href="">我的团队</a>
+					</dd>
+					<dd>
+						<a href="">股东商申请</a>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt>订单管理中心<i class="fa fa-caret-down"></i></dt>
+					<dd>
+						<a href="">我的订单</a>
+					</dd>
+					<dd>
+						<a href="">我的购物车</a>
+					</dd>
+					<dd>
+						<a href="">我的收藏</a>
+					</dd>
+					<dd>
+						<a href="">我的足迹</a>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt>客户服务中心<i class="fa fa-caret-down"></i></dt>
+					<dd>
+						<a href="">退货/换货/补单/维修</a>
+					</dd>
+					<dd>
+						<a href="">交易维权</a>
+					</dd>
+					<dd>
+						<a href="">我的发票</a>
+					</dd>
+					<dd>
+						<a href="">举报中心</a>
+					</dd>
+					<dd>
+						<a href="">联系我们</a>
+					</dd>
+				</dl>
+			</div>
+
+			<div class="participation">
+				<div class="partic-secure">
+					<div class="partic-secure-top">
+						<ul>
+							<li>账户安全</li>
+							<li>财产安全</li>
+							<li>相关设置</li>
+						</ul>
+					</div>
+					<div class="partic-secure-bottom">
+						<ul>
+							<li>
+								<a href="">
+									<span class="personal8"></span>
+									<em>修改密码</em>
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									<span class="personal9"></span>
+									<em>邮箱绑定</em>
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									<span class="personal10"></span>
+									<em>手机绑定</em>
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									<span class="personal11"></span>
+									<em>支付密码</em>
+								</a>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<a href="">
+									<span class="personal12"></span>
+									<em>在线充值</em>
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									<span class="personal13"></span>
+									<em>电子会员卡</em>
+								</a>
+							</li>
+						</ul>
+
+						<ul>
+							<li>
+								<a href="">
+									<span class="personal14"></span>
+									<em>收货地址</em>
+								</a>
+							</li>
+
+							<li>
+								<a href="">
+									<span class="personal15"></span>
+									<em>消息接收</em>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="partic-message">
+					<div class="partic-message-top">
+						<label><img src="images/tx.png"></label>
+						<span>周瑜<em>普通用户</em></span>
+						<b>上次登入：2017年11月14日 </b>
+					</div>
+					<div class="partic-message-text">
+						<p>铺等级: 普通用户</p>
+						<p>当前职称: 无</p>
+						<p>加盟时间: 2017-11-14 11:29:00</p>
+					</div>
+				</div>
+
+				<div id="tabbox">
+					<ul class="tabs" id="tabs2">
+						<li>日红分类</li>
+						<li>周红分类</li>
+						<li>月红分类</li>
+						<li>其它分类</li>
+					</ul>
+
+					<ul class="tab_conbox" id="tab_conbox2">
+						<li class="tab_con">
+							<dl>
+								<dd>
+									<span>销售日分红</span>
+									<em>200元</em>
+								</dd>
+								<dd>
+									<span>共享日分红</span>
+									<em>200元</em>
+								</dd>
+								<dd>
+									<span>销售明星日分红</span>
+									<em>200元</em>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="tab_con">
+							<dl>
+								<dd>
+									<span>销售管理普惠周奖金</span>
+									<em>200元</em>
+								</dd>
+								<dd>
+									<span>中层管理周分红</span>
+									<em>200元</em>
+								</dd>
+							</dl>
+						</li>
+
+						<li class="tab_con">
+							<dl>
+								<dd>
+									<span>供应商推荐奖金</span>
+									<em>200元</em>
+								</dd>
+								<dd>
+									<span>销售新人奖</span>
+									<em>200元</em>
+								</dd>
+								<dd>
+									<span>至尊消费月分红</span>
+									<em>200元</em>
+								</dd>
+								<dd>
+									<span>销售精英月分红</span>
+									<em>200元</em>
+								</dd>
+								<dd>
+									<span>高层销售月分红</span>
+									<em>200元</em>
+								</dd>								
+							</dl>
+						</li>
+						
+						<li class="tab_con">
+							<dl>
+								<dd>
+									<span>个人消费分红</span>
+									<em>200元</em>
+								</dd>
+								<dd>
+									<span>团队销售分享分红</span>
+									<em>200元</em>
+								</dd>
+								<dd>
+									<span>个人微商销售分红</span>
+									<em>200元</em>
+								</dd>							
+							</dl>
+						</li>
+
+					</ul>
+					
+
+				</div>
+			 
+			    <div class="partic-list">
+			         <h3>
+			         	<span>来源/用途</span>
+			         	<em>分红变化</em>
+			         	<b>日期</b>
+			         </h3>
+			         <ul>
+			         	<li>                                                                                                                                                       
+			         		<span>商品供货款</span>
+			         		<em>240.00 </em>
+			         		<b>2017-11-14 17:59:07</b>
+			         	</li>
+			         	<li>                                                                                                                                                       
+			         		<span>商品供货款</span>
+			         		<em>240.00 </em>
+			         		<b>2017-11-14 17:59:07</b>
+			         	</li>
+			         	<li>                                                                                                                                                       
+			         		<span>商品供货款</span>
+			         		<em>240.00 </em>
+			         		<b>2017-11-14 17:59:07</b>
+			         	</li>
+			         	<li>                                                                                                                                                       
+			         		<span>商品供货款</span>
+			         		<em>240.00 </em>
+			         		<b>2017-11-14 17:59:07</b>
+			         	</li>
+			         	<li>                                                                                                                                                       
+			         		<span>商品供货款</span>
+			         		<em>240.00 </em>
+			         		<b>2017-11-14 17:59:07</b>
+			         	</li>
+			         	<li>                                                                                                                                                       
+			         		<span>商品供货款</span>
+			         		<em>240.00 </em>
+			         		<b>2017-11-14 17:59:07</b>
+			         	</li>
+			         	<li>                                                                                                                                                       
+			         		<span>商品供货款</span>
+			         		<em>240.00 </em>
+			         		<b>2017-11-14 17:59:07</b>
+			         	</li>
+			         	<li>                                                                                                                                                       
+			         		<span>商品供货款</span>
+			         		<em>240.00 </em>
+			         		<b>2017-11-14 17:59:07</b>
+			         	</li>
+			         </ul>
+			    </div>
+			</div>
+		</div>
+	</body>
+
+</html>
