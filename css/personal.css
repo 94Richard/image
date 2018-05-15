@@ -2205,4 +2205,440 @@ a:hover {
 	font-weight: 700;
 	color: #000;
 }
-.login-details
+.personal-assets-person .vip-level {
+	padding: 5px 0 5px 10px;
+	font-size: 14px;
+}
+.vip-level-top,.vip-level-bottom {
+	position: relative;
+	margin: 2px auto;
+	font-size: 12px;
+}
+.vip-level img {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.vip-top-details {
+	display: none;
+	position: absolute;
+	left: 210px;
+	top: -6px;
+	width: 262px;
+	padding: 6px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	background: #fff;
+}
+.vip-level-top:hover .vip-top-details{
+	display: block;
+}
+.vip-top-details::before {
+	content: "";
+	position: absolute;
+	left:-11px;
+	top: 10px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-right: 5px solid #dcdcdc;
+}
+.vip-top-details::after {
+	content: "";
+	position: absolute;
+	left:-10px;
+	top: 10px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-right: 5px solid #fff;
+}
+.ellipsis {
+	height: 7px;
+	width: 2px;
+	margin: 5px auto;
+	background: url("../img/ellipsis.png") center center no-repeat;
+}
+.vip-level-top li,
+.vip-level-bottom li {
+	padding-left:5px;
+	background: url("../img/dot.png") 0 0 no-repeat;
+}
+.vip-level li em {
+	color: #9737DF;
+	margin: 0 5px;
+}
+.vip-level li i {
+	font-style: normal;
+	color: #9737DF;
+	margin: 0 5px;
+}
+.vip-bottom-details {
+	display: none;
+	position: absolute;
+	right: 252px;
+	top: -6px;
+	width: 262px;
+	padding: 6px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	background: #fff;
+}
+.vip-bottom-details::before {
+	content: "";
+	position: absolute;
+	right:-11px;
+	top: 10px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-left: 5px solid #dcdcdc;
+}
+.vip-bottom-details::after {
+	content: "";
+	position: absolute;
+	right:-10px;
+	top: 10px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-left: 5px solid #fff;
+}
+.vip-level-bottom:hover .vip-bottom-details {
+	display: block;
+}
+.personal-secure {
+	margin-left: 262px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+}
+.personal-secure-top {
+	height: 34px;
+	border-bottom: 1px solid #dcdcdc;
+	padding: 20px 0;
+	background: #f3f0f9;
+	font-size: 18px;
+	overflow: hidden;
+}
+.personal-secure-top li {
+	float: left;
+	width: 33%;
+	text-align: center;
+	line-height: 28px;
+	color: #1f1f1f;
+	border-left: 1px solid #dcdcdc;
+	margin-left: -1px;
+}
+.personal-secure-bottom {
+	overflow: hidden;
+	padding: 20px 0;
+}
+.personal-secure-bottom>ul {
+	float: left;
+	width: 33%;
+	height: 73px;
+	margin-left: -1px;
+	text-align: center;
+	border-left: 1px solid #dcdcdc;
+}
+.password li span {
+	color: #747474;
+}
+.password li:hover span{
+	color: #171717
+}
+.personal-secure-bottom .password li{
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+}
+.password li em {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.password-login em {
+	width: 21px;
+	height: 25px;
+	background: url("../images/personal_8.png") 0 0 no-repeat;
+}
+.password-pay em {
+	width: 21px;
+	height: 26px;
+	background: url("../images/personal_11.png") 0 0 no-repeat;
+}
+.payment table {
+	width: 100%;
+	height: 100%;
+	text-align: left;
+}
+.payment td {
+	padding-left: 10px;
+}
+.payment td span {
+	color: #747474;
+}
+.payment td:hover span {
+	color: #171717;
+}
+.payment td em {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	margin-bottom: 3px;
+}
+.payment .fast em{
+	width: 23px;
+	height: 18px;
+	background: url("../img/assets_09.png") 0 0 no-repeat;
+}
+.payment .zhifubao em {
+	width: 23px;
+	height: 20px;
+	background: url("../img/assets_14.png") 0 0 no-repeat;
+}
+.payment .weixin {
+	padding-left: 22px;
+}
+.payment .weixin em {
+	width: 25px;
+	height: 21px;
+	margin-right: 22px;
+	background: url("../img/assets_06.png") 0 0 no-repeat;
+}
+.payment .caifutong em {
+	width: 50px;
+	height: 20px;
+	background: url("../img/assets_16.png") 0 0 no-repeat;
+}
+.personal-secure-bottom .card {
+	text-align: left;
+}
+.personal-secure-bottom .card li {
+	margin: 0 45px;
+	color: #747474;
+}
+.card li em {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 2px;
+	margin-right: 5px;
+	width: 12px;
+	height: 12px;
+}
+.card .bank em {
+	background: url("../img/assets_03.png") 0 0 no-repeat;
+}
+.card .new-card em {
+	background: url("../img/assets_18.png") 0 0 no-repeat;
+}
+.card .set {
+	display: inline-block;
+	border-radius: 3px;
+	margin-left: 35px;
+	margin-right: 10px;
+	background: #9737DF;
+}
+.card .set span {
+	color: #fff;
+	padding: 0 2px;
+}
+.card .unbind {
+	display: inline-block;
+	border: 1px solid #9737DF;
+	border-radius: 3px;
+	padding: 0 2px;
+	color: #747474;
+}
+.personal-assets-banner {
+	margin-top: 25px;
+	height: 143px;
+}
+.personal-balance {
+	margin: 20px 0;
+}
+.personal-balance .title,
+.personal-bill .title {
+	position: relative;
+	margin-bottom: 15px;
+	padding-left: 14px;
+	font-size: 18px;
+	color: #000;
+}
+.personal-balance .title::before,
+.personal-bill .title::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 4px;
+	height: 20px;
+	background: #9737DF;
+}
+.balance-details {
+	border: 1px solid #dcdcdc;
+	padding: 20px 0;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.balance-details li {
+	float: left;
+	width: 33%;
+	margin-left: -1px;
+	border-left: 1px solid #dcdcdc;
+	text-align: center;
+	font-size: 16px;
+}
+.balance-details li p {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.balance-details li em {
+	color: #9737DF;
+	margin-right: 2px;
+}
+.personal-bill-tabs {
+	margin-left: 30px;
+	overflow: hidden;
+}
+.personal-bill-tabs li {
+	float: left;
+	width: 135px;
+	height: 60px;
+	line-height: 60px;
+	font-size: 18px;
+	color: #000;
+	text-align: center;
+	cursor: pointer;
+}
+.personal-bill-tabs .cur,
+.personal-bill-tabs li:hover {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #9737df;
+	color: #fff;
+}
+.personal-bill .service-contact {
+	position: absolute;
+	bottom: 10px;
+	right: 15px;
+	padding-left: 28px;
+	font-size: 14px;
+	font-weight: 400;
+	background: url("../img/assets_23.png") 0 0 no-repeat;
+}
+.personal-bill-details {
+	border: solid #9737DF;
+	border-width: 5px 1px 5px 1px;
+	border-radius: 5px;
+}
+.personal-bill-details>p {
+	background: #f3f0f9;
+	padding: 14px 10px;
+	overflow: hidden;
+	border-bottom: 1px solid #dcdcdc
+}
+.personal-bill-details>p span {
+	box-sizing: border-box;
+	float: left;
+	width: 25%;
+	height: 28px;
+	line-height: 28px;
+	border-left: 1px solid #c5c5c5;
+	font-size: 14px;
+	text-align: center;
+}
+.personal-bill-details>p span:first-child {
+	border-left: none;
+}
+.personal-bill p i {
+	display: inline-block;
+	vertical-align: middle;
+  border: 6px solid transparent;
+	border-top-color: #595959;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+.personal-bill-details ul li {
+	margin: 0 10px;
+	margin-top: -1px;
+	border-top: 1px solid #dcdcdc;
+	overflow: hidden;
+}
+.personal-bill-details ul li span {
+	float: left;
+	width: 25%;
+	margin: 12px 0;
+	text-align: center;
+	font-size: 14px;
+}
+.personal-bill-details li p {
+	float: left;
+	width: 25%;
+	padding: 5px 0;
+	font-size: 14px;
+	text-align: center;
+	word-wrap: break-word;
+}
+.bill-expend i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	width: 2px;
+	height: 14px;
+	border: 1px solid #9737DF;
+}
+.bill-income i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+	width: 4px;
+	height: 16px;
+	background: #9737Df;
+}
+.bill-expend em {
+	color: #ff5e5e;
+}
+.bill-income em {
+	color:#91d798;
+}
+/*personal-Hi*/
+.personal-hi-banner {
+	height: 300px;
+	margin-bottom: 20px;
+}
+.personal-hi-message {
+ 	width: 240px;
+ 	height: 180px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	background: #f3f0f9;
+}
+.hi-message-top {
+	padding: 6px 8px;
+	font-size: 18px;
+	color: #171717;
+}
+.hi-message-top .outer {
+	display: inline-block;
+	vertical-align: middle;
+	width: 54px;
+	height: 54px;
+	border: 1px solid #dcdcdc;
+	border-radius: 50%;
+	padding: 3px;
+	margin-right: 10px;
+}
+.hi-message-top .outer img {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+}
+.hi-message-details li {
+	margin-top: 5px;
+	padding-left: 10px;
+	font-size: 14px;
+	color: #5a5a5a;
+}
+.hi-message-details li em {
+	color: #9737df;
+}
