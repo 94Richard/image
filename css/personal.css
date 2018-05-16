@@ -1694,7 +1694,7 @@ a:hover {
 .personal-setting {
   margin-left: 184px;
   height: auto;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .personal-setting-message {
 	width: 100%;
@@ -1987,7 +1987,8 @@ a:hover {
 	 box-sizing: border-box;
 	 width: 33.3%;
 	 height: 35px;
-	 border-right: 1px solid #dcdcdc;
+	 margin-left: -1px;
+	 border-left: 1px solid #dcdcdc;
  }
  .personal-points-mid img {
 	 position: absolute;
@@ -2153,6 +2154,7 @@ a:hover {
 	height: 42px;
 	margin: 0 8px;
 	border: 1px solid #E6E6E6;
+	text-align: center;
 }
 .pagination-jump span {
 	display: inline-block;
@@ -2166,7 +2168,7 @@ a:hover {
 /* personal assets */
 .personal-assets-person {
 	float: left;
-	width: 250px;
+	width: 240px;
 	height: 188px;
 	border: 1px solid #dcdcdc;
 	border-radius: 5px;
@@ -2606,19 +2608,18 @@ a:hover {
 	height: 300px;
 	margin-bottom: 20px;
 }
-.personal-hi-message {
- 	width: 240px;
- 	height: 180px;
+.hi-person {
+	float: left;
+	width: 222px;
+	height: 166px;
 	border: 1px solid #dcdcdc;
 	border-radius: 5px;
 	background: #f3f0f9;
-}
-.hi-message-top {
 	padding: 6px 8px;
 	font-size: 18px;
 	color: #171717;
 }
-.hi-message-top .outer {
+.hi-person .outer {
 	display: inline-block;
 	vertical-align: middle;
 	width: 54px;
@@ -2628,17 +2629,302 @@ a:hover {
 	padding: 3px;
 	margin-right: 10px;
 }
-.hi-message-top .outer img {
+.hi-person .outer img {
 	width: 55px;
 	height: 55px;
 	border-radius: 50%;
 }
-.hi-message-details li {
+.hi-person-message li {
 	margin-top: 5px;
 	padding-left: 10px;
 	font-size: 14px;
 	color: #5a5a5a;
 }
-.hi-message-details li em {
+.hi-person-message li em {
 	color: #9737df;
+}
+.hi-message {
+	margin-left: 250px;
+	padding: 10px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	font-size: 14px;
+	color: #777;
+	overflow: hidden;
+}
+.hi-message-left {
+	float: left;
+	width: 520px;
+}
+.hi-message input {
+	width: 40px;
+	border: none;
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+.hi-message button {
+	border: none;
+	border-radius: 3px;
+	padding: 1px 5px;
+	background: #9737df;
+	color: #fff;
+}
+.hi-message h4 {
+	margin-bottom: 6px;
+	font-weight: normal;
+	color: #333;
+}
+.hi-message em {
+	color: #9737df;
+}
+.hi-message h4 i {
+	display: inline-block;
+	vertical-align: middle;
+	height: 20px;
+	width: 5px;
+	margin-right: 10px;
+	background: #9737df;
+}
+.percent-cur {
+	position: relative;
+}
+.percent-cur-hint {
+	display: none;
+	position: absolute;
+	top: -25px;
+	right: 135px;
+	padding: 1px 5px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	font-size: 12px;
+}
+.percent-cur-hint::before {
+	content: "";
+	position: absolute;
+	left: 10px;
+	bottom: -11px;
+	border: 5px solid transparent;
+	border-top-color: #dcdcdc;
+}
+.percent-cur-hint::after {
+	content: "";
+	position: absolute;
+	left: 10px;
+	bottom: -10px;
+	border: 5px solid transparent;
+	border-top-color: #fff;
+}
+.percent-cur-hint i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	width: 14px;
+	height: 14px;
+	background: url("../img/hint.png") 0 0 no-repeat;
+}
+.hi-bonus-withdraw{
+	margin-top: 20px;
+}
+.hi-message span {
+	margin-left: 15px;
+}
+.hi-bonus-withdraw span {
+	float: left;
+	width: 230px;;
+	margin-bottom: 5px;
+}
+.hi-bonus-withdraw button {
+	margin-left: 55px;
+}
+.hi-bonus-withdraw p {
+	float: left;
+	padding-left: 10px;
+	border: 1px dotted #dcdcdc;
+	border-radius: 5px;
+	font-size: 12px;
+}
+.hi-message-right {
+	position: relative;
+	margin-left: 520px;
+}
+.hi-message-right::before {
+	content: "";
+	position: absolute;
+	left: -15px;
+	top: 14px;
+	width: 1px;
+	height: 130px;
+	background: #dcdcdc;
+}
+.hi-message-right div {
+	margin-top: 10px;
+}
+.hi-message-right div button {
+	margin-left: 20px;
+}
+.personal-hi-details {
+	margin-top: 25px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+}
+.personal-hi-title {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	background: #f3f0f9;
+	border-bottom: 1px solid #dcdcdc;
+	color: #8865a5;
+	font-size: 18px;
+}
+.personal-hi-title i {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.personal-hi-details i {
+	width: 26px;
+	height: 26px;
+	background: url("../img/hi-details_01.png") 0 0 no-repeat;
+}
+.vip-level-list i {
+	width: 20px;
+	height: 20px;
+	background: url("../img/hi-details_02.png") 0 0 no-repeat;
+}
+.hi-details-list h3 {
+	height: 48px;
+	line-height: 48px;
+	font-weight: normal;
+	color: #000;
+}
+.hi-details-list h3 span {
+	font-size: 16px;
+}
+.hi-details-list li {
+	height: 45px;
+	line-height: 45px;
+}
+.hi-details-list span {
+	float: left;
+	width: 20%;
+	color: #777;
+	text-align: center;
+	font-size: 14px;
+}
+.vip-level-list {
+	margin-top: 20px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.vip-level-list h3 {
+	height: 48px;
+	line-height: 48px;
+	font-weight: normal;
+	font-size: 14px;
+}
+.vip-level-list h3 em {
+	display: inline-block;
+	vertical-align: middle;
+	width: 30px;
+	height: 26px;
+	margin-right: 2px;
+}
+.vip-level-list b {
+	float: left;
+	width: 180px;
+	text-align: center;
+	font-weight: normal;
+	font-size: 14px;
+}
+.vip-level-list span {
+	float: left;
+	width: 132px;
+	text-align: center;
+}
+.vip-level-list li span {
+	color: #9563e4;
+	font-size: 14px;
+}
+.vip-level-list li {
+	height: 28px;
+	line-height: 28px;
+}
+.vip-level-list p {
+	float: left;
+	height: 18px;
+	line-height: 18px;
+	padding-left: 5px;
+	margin: 5px 0 10px 20px;
+	border: 1px dotted #dcdcdc;
+	border-radius: 5px;
+}
+/* my bonus  */
+.personal-bonus-head {
+	padding: 15px 0;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	background: #f3f0f9;
+	overflow: hidden;
+	font-size: 16px;
+}
+.personal-message-left {
+	float: left;
+	padding: 0 10px;
+}
+.personal-message-left .outer {
+	float: left;
+	width: 79px;
+	height: 79px;
+	border: 1px solid #dcdcdc;
+	border-radius: 50%;
+	margin-top: 15px;
+	padding: 3px;
+}
+.personal-message-left img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.personal-message-id {
+	margin-left: 100px;
+	margin-top: 30px;
+	color: #1f1f1f;
+}
+.personal-bonus-head span {
+	display: block;
+}
+.personal-message-id p {
+	margin-top: 20px;
+}
+.personal-message-right {
+	margin-left: 230px;
+	border-left: 1px solid #dcdcdc;
+	overflow: hidden;
+}
+.personal-message-right li {
+	float: left;
+	width: 25%;
+	text-align: center;
+	color: #9737df
+}
+.personal-message-right span {
+	height: 28px;
+	line-height: 28px;
+	color:#333;
+}
+.personal-bonus-grade i {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-top: 5px;
+	width: 100px;
+	height: 85px;
+	background: url("../img/bonus_01.png");
+}
+.personal-bonus-rank i {
+	display: inline-block;
+	width: 87px;
+	height: 91px;
+	background: url("../img/bonus_02.png") 0 0 no-repeat;
 }
